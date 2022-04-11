@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>SixtyFour Data Intelligence - Task</title>
+</head>
+
+<body>
+    <div>
+        <div class="heading">
+            <h1>Banking Dashboard</h1>
+        </div>
+        <div class="container">
+            <div class="first_block">
+                <div class="first_left">
+                    <div class="first_left_1">
+                        <div class="first_left_1A">
+                            <div class="first_left_1A_details">
+                                <h2>Non-Food Credit Growth</h2> <br>
+                                <p>31 December 2021</p> <br>
+                                <h2>9.3%</h2>
+                            </div>
+                        </div>
+                        <div class="first_left_1B">
+                            <div class="first_left_1B_details">
+                                <h2>Deposit Growth</h2> <br>
+                                <p>31 December 2021</p> <br>
+                                <h2>10.3%</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first_left_2">
+                        <div class="first_left_2A">
+                            <h2>Composition of Bank Loans (September-2021)
+                            </h2>
+                        </div>
+                        <div class="first_left_2B"><canvas id="doughnutChart"
+                                style="width:100%;max-width:700px"></canvas></div>
+                    </div>
+                </div>
+                <div class="first_right">
+                    <h2>Scheduled Commercial Banks - Deposit and Credit Growth</h2>
+                    <canvas id="depAndCredGrowthChart" width="875px" height="300px"></canvas>
+                </div>
+            </div>
+            <div class="second_block">
+                <div>
+                    <div class="second_block_chart1_head">
+                        <h2>Loan Growth (YoY) by Bank Category</h2>
+                    </div>
+                    <div class="second_block_chart1"><canvas id="secondBlockChart1"></canvas></div>
+                </div>
+                <div>
+                    <div class="second_block_chart2_head">
+                        <h2>Composition of Bank Deposits (September-2021)</h2>
+                    </div>
+                    <div class="second_block_chart2"><canvas id="doughnutChart2"
+                            style="width:100%;max-width:700px"></canvas></div>
+                </div>
+                <div>
+                    <div class="second_block_chart3_head">
+                        <h2>Deposit Growth (YoY) by Bank Category</h2>
+                    </div>
+                    <div class="second_block_chart3"><canvas id="secondBlockChart1B"></canvas></div>
+                </div>
+            </div>
+            <div class="third_block">
+                <div>
+                    <div class="second_block_chart1_head">
+                        <h2>Loan growth (YoY) by Sectors (November-2021)</h2>
+                    </div>
+                    <div class="second_block_chart1"><canvas id="thirdBlockChart1" height="250px"></canvas></div>
+                </div>
+                <div>
+                    <div class="second_block_chart2_head">
+                        <h2>Loan growth (YoY) by Key Sub-sectors (November-2021)</h2>
+                    </div>
+                    <div class="second_block_chart2"><canvas id="thirdBlockChart2" height="250px"></canvas></div>
+                </div>
+                <div>
+                    <div class="second_block_chart3_head">
+                        <h2>Average Lending & Deposit Rates of SCBs</h2>
+                    </div>
+                    <div class="second_block_chart3"><canvas id="thirdBlockChart3" height="250px"></canvas></div>
+                </div>
+            </div>
+            <div class="fourth_block">
+                <div>
+                    <div class="fourth_block_chart1_head">
+                        <h2>Scheduled Commercial Banks Tier I Capital Ratio (%)</h2>
+                    </div>
+                    <div class="second_block_chart1"><canvas id="fourthBlockChart1" height="250px"></canvas></div>
+                </div>
+                <div>
+                    <div class="fourth_block_chart2_head">
+                        <h2>Scheduled Commercial Banks GNPA Ratio (%)</h2>
+                    </div>
+                    <div class="second_block_chart2"><canvas id="fourthBlockChart2" height="250px"></canvas></div>
+                </div>
+                <div>
+                    <div class="fourth_block_chart3_head">
+                        <h2> Scheduled Commercial Banks Stressed Assets Ratio (%)</h2>
+                    </div>
+                    <div class="second_block_chart3"><canvas id="fourthBlockChart3" height="250px"></canvas></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
